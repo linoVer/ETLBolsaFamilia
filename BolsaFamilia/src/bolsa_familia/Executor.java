@@ -8,10 +8,12 @@ public class Executor {
 
 	public static void main(String[] args) throws ParseException, SQLException {
 
+		Tempo.executeETL();
+		Cidades.executeETL();
 		long start = System.nanoTime();
 		Fatos.executeETL();
 		long end = System.nanoTime();
-		System.out.println("Tempo de execução");
+		System.out.println("Tempo de execuï¿½ï¿½o");
 	    System.out.println((end-start)/1000000000); 
 	         
 	}
