@@ -1,0 +1,9 @@
+bolsa_familia.sql
+auxiliar.sql
+tabela_tempo.sql
+table_bolsa_familia.sql
+insert datas.sql
+inserts-bolsa_familia.sql
+
+dw_bolsa_familia.sql
+dw_bolsa_familia.ddl
