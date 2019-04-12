@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3B71E86-9866-80D1-46EC-F1804B76A57C" name="DM_LOCAL">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>84BFD618-983B-DEE6-32CD-5D28BACA47E9</importedID>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LOCAL" id="EA91E4C5-2FD2-AF46-99E2-4F157735DC3F">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>3C38803A-78B1-1F72-7514-8C441F5F9FFA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUNICIPIO" id="DC29F5D0-874F-F01F-29EA-0C1D44774A0A">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>F9D049B3-0BAD-1C30-E73F-AFE220027D3E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="D15E1FBD-21F4-67B9-1C4F-932EB0634F6C">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>A6DE20E1-25D3-C358-ED92-642F76A56690</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGIAO" id="06A3529E-066D-54C3-71C7-3928B989DBC1">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>BD359443-9AC0-BA2B-B838-B562C8E95332</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9BEF4F97-B968-4C6C-0226-D5B463565EF2" name="DM_LOCAL_PK">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>193B2707-BD3C-80A2-B9BA-BECCAD5C4D87</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA91E4C5-2FD2-AF46-99E2-4F157735DC3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

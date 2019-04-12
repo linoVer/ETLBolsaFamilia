@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="C737C281-B395-86E5-3710-EBF4563B05A1" name="dw_bolsa_familia" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

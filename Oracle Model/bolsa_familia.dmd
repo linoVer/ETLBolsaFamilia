@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="bolsa_familia" id="1354EDFF-44DD-0D27-9B4D-E1F17A3435B2" version="3.5">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:40 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1354EDFF-44DD-0D27-9B4D-E1F17A3435B2</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8F8553FF-C32F-F247-F3B4-D7ECFE46F15D">
+<designStoragePath>C:\Users\mvsjk\Google Drive\UNIT\2019.1\Laboratório de Banco de Dados\APS1\bolsa_familia</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8BC4D2C6-BC03-2289-7028-CCF4E1734782">
+<designStoragePath>C:\Users\mvsjk\Google Drive\UNIT\2019.1\Laboratório de Banco de Dados\APS1\bolsa_familia</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="7A7998F9-0163-E845-11F0-4DDF8B0C7D81">
+<designStoragePath>C:\Users\mvsjk\Google Drive\UNIT\2019.1\Laboratório de Banco de Dados\APS1\bolsa_familia</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

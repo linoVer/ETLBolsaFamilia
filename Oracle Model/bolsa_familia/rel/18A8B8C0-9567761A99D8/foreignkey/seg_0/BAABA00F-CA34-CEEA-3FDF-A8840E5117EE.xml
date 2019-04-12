@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BAABA00F-CA34-CEEA-3FDF-A8840E5117EE" containerWithKeyObject="7810C089-E88B-B387-12C1-C14BF5AEAB84" localFKIndex="C34967AE-33A3-1F6A-5E1A-30A2803BA1C0" name="TABLE_4_DM_LOCAL_FK">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>4B060A99-989A-4F57-549A-E69A5B10BDCF</importedID>
+<referredTableLongName>DM_LOCAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D3B71E86-9866-80D1-46EC-F1804B76A57C</referredTableID>
+<keyObject>9BEF4F97-B968-4C6C-0226-D5B463565EF2</keyObject>
+<referredKeyID>9BEF4F97-B968-4C6C-0226-D5B463565EF2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LOCAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

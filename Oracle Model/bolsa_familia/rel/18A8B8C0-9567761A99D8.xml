@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="dw_bolsa_familia" id="18A8B8C0-0483-D150-9E23-9567761A99D8" mainViewID="C737C281-B395-86E5-3710-EBF4563B05A1">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:51 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4B54776A-07CD-EE8C-3F38-E7184E95979D" containerWithKeyObject="7810C089-E88B-B387-12C1-C14BF5AEAB84" localFKIndex="C243F8E7-84F6-ED9D-B117-046F8478A4B0" name="TABLE_4_DM_TEMPO_FK">
+<createdBy>mvsjk</createdBy>
+<createdTime>2019-04-10 20:57:56 UTC</createdTime>
+<ownerDesignName>bolsa_familia</ownerDesignName>
+<importedID>18328099-62BC-7D25-6C18-EE53B878F9BF</importedID>
+<referredTableLongName>DM_TEMPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>56BC3196-F010-DF58-4191-BF6F08EE688F</referredTableID>
+<keyObject>23DE7D2C-D01E-AD30-5B91-D62A4794A438</keyObject>
+<referredKeyID>23DE7D2C-D01E-AD30-5B91-D62A4794A438</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TEMPO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
