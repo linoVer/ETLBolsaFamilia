@@ -60,9 +60,6 @@ public class Fatos {
 		this.valor_total = valor_total;
 	}
 
-
-
-
 	private static LinkedList<Fatos> extract() throws SQLException, ParseException, InterruptedException {
 
 		Conexao con = new Conexao();
@@ -95,6 +92,7 @@ public class Fatos {
 			int codigoIbge = res.getInt("COD_IBGE");
 			codIBGE.add(codigoIbge);
 		}	
+		res.close();
 		
 		while(!codIBGE.isEmpty()) {
 			System.out.println(codIBGE.size());
@@ -157,11 +155,10 @@ public class Fatos {
 				ins.executeUpdate();
 				aux.remove();
 			}
+			ins.close();
 			codIBGE.remove();
 		}
 		
-		
-
 		sql = "SELECT ID, NOME_IBGE, VALOR, DATA_REFERENCIA, QUANTIDADE_BENEFICIADOS, COD_IBGE, t.ID_TEMPO FROM DADOS_AUX d \r\n" + 
 				"JOIN DW_BOLSA_FAMILIA.DM_TEMPO t ON t.NU_ANO = TO_CHAR(d.DATA_REFERENCIA, 'YYYY') AND t.NU_MES = TO_CHAR(d.DATA_REFERENCIA, 'MM')";
 
@@ -175,11 +172,11 @@ public class Fatos {
 			int id_tempo = res.getInt("ID_TEMPO");
 
 			fatos.add(new Fatos(id_tempo, codigoIbge, valor, quantidadeBeneficiados, quantidadeBeneficiados, nome));              
-		}		
+		}
+		res.close();
 		
 		return fatos;		
 	}
-	
 	
 	private static LinkedList<Fatos> transform(){    	
 		while(!fatos.isEmpty()) {
@@ -195,8 +192,6 @@ public class Fatos {
 		}	
 		return fatosTransform;		
 	}
-	
-	
 	
 	private static void load() throws SQLException {
 
