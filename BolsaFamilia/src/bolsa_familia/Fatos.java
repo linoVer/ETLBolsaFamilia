@@ -37,6 +37,8 @@ public class Fatos {
 	private static LinkedList<Dados> aux = new LinkedList<>();
 	private static LinkedList<Integer> codIBGE = new LinkedList<>();
 	
+	private static int count = 0;
+	
 	private static String sql;
 	@SuppressWarnings("unused")
 	private static ResultSet res;
@@ -61,7 +63,7 @@ public class Fatos {
 
 
 
-	private static LinkedList<Fatos> extract() throws SQLException, ParseException {
+	private static LinkedList<Fatos> extract() throws SQLException, ParseException, InterruptedException {
 
 		Conexao con = new Conexao();
 		
@@ -94,12 +96,17 @@ public class Fatos {
 			codIBGE.add(codigoIbge);
 		}	
 		
-		
 		while(!codIBGE.isEmpty()) {
 			System.out.println(codIBGE.size());
 			ibge = codIBGE.getFirst().toString();
 			for (int i = 0; i < 3; i++) {
 				for (int j = 0; j < 12; j++) {
+					count++;
+					//pausa para evitar que o site derrube a requisão devido ao quantidade de requisições ininterruptas
+					if(count == 5000) {
+						count = 0;
+						Thread.sleep(300000);
+					}
 					Response resp = client.target("http://www.transparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno="+mesAno+"&codigoIbge="+ibge+"&pagina=1").request(MediaType.APPLICATION_JSON).get();
 					String retorno = resp.readEntity(String.class);
 					
@@ -215,48 +222,37 @@ public class Fatos {
 		con.getCon().close();
 	}
 	
-	public static void executeETL() throws SQLException, ParseException {		
+	public static void executeETL() throws SQLException, ParseException, InterruptedException {		
 		extract();
 		transform();
 		load();	   
 	}
 
-
 	private int getId_local() {
 		return id_local;
 	}
-
 
 	private int getId_tempo() {
 		return id_tempo;
 	}
 
-
 	private int getNu_beneficiados() {
 		return nu_beneficiados;
 	}
-
 
 	private double getValor_total() {
 		return valor_total;
 	}
 
-
-
-
 	private int getCodigoIbge() {
 		return codigoIbge;
 	}
-
 
 	private double getValor() {
 		return valor;
 	}
 
-
 	private int getQuantidadeBeneficiados() {
 		return quantidadeBeneficiados;
 	}
-
-
 }
